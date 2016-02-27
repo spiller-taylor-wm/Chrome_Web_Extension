@@ -50,16 +50,19 @@ for (var i = 0; i < comments.length - 2; i++){
   comments[i + 1].style.display = 'none';
 }
 
-/** Gathers all comment headers so a button can be added */
-headers = document.getElementsByClassName("timeline-comment-header-text");
-var node = document.createElement("BUTTON");
-var text = document.createElement("Show Comment");
-node.appendChild(text);
+/** Gathers all comment headers so a button can be added.
+ This currently is not finished.
+ 
+  headers = document.getElementsByClassName("timeline-comment-header-text");
+  var node = document.createElement("BUTTON");
+  var text = document.createElement("Show Comment");
+  node.appendChild(text);
 
-document.body.appendChild(node);
+  document.body.appendChild(node);
 
-for (var i = 1; i < headers.length; i++) {
-  /** Adds button to view any comment */
-  headers[i].appendChild(node);
+  for (var i = 1; i < headers.length; i++) {
+    /** Adds button to view any comment
+    headers[i].appendChild(node);
 
-}
+  }
+*/
