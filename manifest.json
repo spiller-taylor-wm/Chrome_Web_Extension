@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "CatHub",
+  "description": "For when you don't want to see people's faces",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "CatHub"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+  ],
+  "content_scripts":[
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["background.js"]
+    }
+  ]
+
+}
